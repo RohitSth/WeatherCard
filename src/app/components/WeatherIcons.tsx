@@ -10,21 +10,11 @@ import {
   TiWeatherWindy,
   TiWeatherWindyCloudy,
 } from "react-icons/ti";
+import { RiFoggyLine } from "react-icons/ri";
 
-export default function WeatherStatus({ status }: { status: string }) {
+export default function WeatherIcons({ status }: { status: string }) {
   return (
     <div className="flex flex-col items-center pb-10">
-      {/* <TiWeatherCloudy />
-      <TiWeatherDownpour />
-      <TiWeatherNight />
-      <TiWeatherPartlySunny />
-      <TiWeatherShower />
-      <TiWeatherSnow />
-      <TiWeatherStormy />
-      <TiWeatherSunny />
-      <TiWeatherWindy />
-      <TiWeatherWindyCloudy /> */}
-
       {status === "cloudy" ? (
         <TiWeatherCloudy />
       ) : status === "downpour" ? (
@@ -43,15 +33,13 @@ export default function WeatherStatus({ status }: { status: string }) {
         <TiWeatherSunny />
       ) : status === "windy" ? (
         <TiWeatherWindy />
+      ) : status === "foggy" ? (
+        <RiFoggyLine />
       ) : (
-        <TiWeatherWindyCloudy />
+        <TiWeatherSunny />
       )}
-      <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-        21 C
-      </h5>
-      <span className="text-sm text-gray-500 dark:text-gray-400">
-        Kathmandu
-      </span>
+
+      {status.charAt(0).toUpperCase() + status.slice(1)}
     </div>
   );
 }
