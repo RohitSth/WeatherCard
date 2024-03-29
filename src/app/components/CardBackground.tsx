@@ -1,11 +1,14 @@
 import Search from "./Search";
-import WeatherIcons from "./WeatherIcons";
 import WeatherStatus from "./WeatherStatus";
 
 export default function CardBackground({ status }: { status: string }) {
   let backgroundImageUrl;
 
   switch (status) {
+    case "":
+      backgroundImageUrl =
+        "https://imgs.search.brave.com/i8xvugWeYuwfP0oVthneVAmxlaPXUlx632rmiaW6TeU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zdW4td2l0aC1z/dW4tcmF5cy1ibHVl/LXNreS13aXRoLWNs/b3Vkc18xMDQzMzct/NTQ5Mi5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw";
+      break;
     case "cloudy":
       backgroundImageUrl =
         "https://imgs.search.brave.com/maBC4aFgqm6Xtny3J8ryfNg2ykM-q3EsZrPAMsaQuBw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ1/Mzg4MzI5MS9waG90/by9zdG9ybXktY2xv/dWR5LXNraWVzLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1C/NEp0cXI5TmZ3X010/bktobzRBbnJXZ3Ix/MmNSSkNfUTR5U3Jw/bVRNaW5vPQ";
@@ -26,7 +29,7 @@ export default function CardBackground({ status }: { status: string }) {
       backgroundImageUrl =
         "https://imgs.search.brave.com/QYDYsvRJ_0KMXlnzeJA9E3meIrh7I2nCR1VK_47mtYY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIy/Nzk1MjMyL3Bob3Rv/L3JhaW4td2F0ZXIt/ZHJvcC1mYWxsaW5n/LXRvLXRoZS1mbG9v/ci1pbi1yYWlueS1z/ZWFzb24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVIyZ3B6/d2JGOWJxWklfdkRN/UXF6M0plMjJaSDk0/RDF1UFlsZ3R5N0hm/NnM9";
       break;
-    case "snow":
+    case "snowy":
       backgroundImageUrl =
         "https://imgs.search.brave.com/AVRUlk9RDuY1OOkKx1hyBb3Qk-LM_6DH0trFOov1yZ8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDI2MDEwOTgtOGZj/MTE0ZTE0OGUyP3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tkh4OGMyNXZk/eVV5TUhOMGIzSnRm/R1Z1ZkRCOGZEQjhm/SHd3";
       break;
@@ -40,7 +43,7 @@ export default function CardBackground({ status }: { status: string }) {
       break;
     case "windy":
       backgroundImageUrl =
-        "https://imgs.search.brave.com/a0apDgiR2pJV5MOrGYofv6z4quhPWu4RGc5dhK29Zng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEy/NDQ4NDcxOS9waG90/by93aW5kc29jay13/aXRoLWNsb3VkeS1z/a3kuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVU0QUhRWUhh/MmljeGx6V0pmSUJF/dmZHQjVSVWotMlF6/ajRFMElDX0U4b1E9w";
+        "https://imgs.search.brave.com/wu0oe0e1HhVscpZ4PTlJRKS23lDM0SflO6HwdYfW5EM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzk5Lzk2LzE4/LzM2MF9GXzQ5OTk2/MTg0OV9SVFBqWEhF/Q1VIQmk0WDlacnBW/VHhiMzBFc3gwYnZJ/cS5qcGc";
       break;
     case "foggy":
       backgroundImageUrl =
@@ -57,13 +60,7 @@ export default function CardBackground({ status }: { status: string }) {
         }}
       >
         <Search />
-        <WeatherIcons status={status} />
-        <WeatherStatus
-          temperature={20}
-          location="Kathmandu"
-          humidity={70}
-          windspeed={5.14}
-        />
+        <WeatherStatus city="Pokhara" status={status} />
       </div>
     </>
   );
