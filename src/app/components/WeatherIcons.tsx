@@ -1,20 +1,13 @@
 import {
   TiWeatherCloudy,
   TiWeatherDownpour,
-  TiWeatherNight,
-  TiWeatherPartlySunny,
-  TiWeatherShower,
-  TiWeatherSnow,
-  TiWeatherStormy,
   TiWeatherSunny,
   TiWeatherWindy,
 } from "react-icons/ti";
-import { RiFoggyLine, RiDrizzleLine } from "react-icons/ri";
+import { RiFoggyLine, RiDrizzleLine, RiHazeLine } from "react-icons/ri";
 import { IoThunderstorm } from "react-icons/io5";
 import { BsCloudSnow } from "react-icons/bs";
-import { WiSmoke, WiDust } from "react-icons/wi";
-import { RiHazeLine } from "react-icons/ri";
-import { WiSandstorm } from "react-icons/wi";
+import { WiSmoke, WiDust, WiSandstorm } from "react-icons/wi";
 import { FaVolcano } from "react-icons/fa6";
 import { GiTornado } from "react-icons/gi";
 
@@ -61,8 +54,12 @@ export default function WeatherIcons({
         <TiWeatherSunny />
       )}
 
-      <h1>{status.charAt(0).toUpperCase() + status.slice(1)}</h1>
-      <p>{description.charAt(0).toUpperCase() + description.slice(1)}</p>
+      <h1 className="text-md font-semibold">
+        {status.charAt(0).toUpperCase() + status.slice(1)}
+      </h1>
+      <p className="text-sm font-thin">
+        {description.charAt(0).toUpperCase() + description.slice(1)}
+      </p>
     </div>
   );
 }
