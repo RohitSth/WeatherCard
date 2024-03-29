@@ -60,7 +60,7 @@ export default function CardBackground({ status }: { status: string }) {
         }}
       >
         <Search />
-        <WeatherStatus city="Pokhara" status={status} />
+        <WeatherStatus city="Africa" />
       </div>
     </>
   );

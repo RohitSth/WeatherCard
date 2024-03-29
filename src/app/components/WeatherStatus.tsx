@@ -20,12 +20,15 @@ export default async function WeatherStatus({
   }
 
   const { name, weather, main, wind } = await checkWeather();
+
+  const weatherStatus = weather[0].main;
+  const weatherDescription = weather[0].description;
   return (
     <>
-      <WeatherIcons status={status} />
+      <WeatherIcons status={weatherStatus} description={weatherDescription} />
       <div className="flex flex-col items-center">
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-          {main.temp}°C
+          {Math.round(main.temp)}°C
         </h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">{name}</span>
       </div>
