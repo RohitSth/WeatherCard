@@ -93,22 +93,28 @@ export default async function CardBackground({ city }: { city: string }) {
             status={weatherStatus}
             description={weatherDescription}
           />
-          <div className="flex flex-col items-center">
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-              {Math.round(main.temp)}°C
-            </h5>
-            <span className="text-sm text-cyan-400 drop-shadow-sm">{name}</span>
-          </div>
-          <div className="flex justify-between items-start">
-            <span className="text-sm flex flex-col items-center text-gray-500 dark:text-gray-400">
-              <BiWater className="text-cyan-400" />
-              {main.humidity}%<small>Humidity </small>
-            </span>
-            <span className="text-sm flex flex-col items-center text-gray-500 dark:text-gray-400">
-              <FaWind className="text-cyan-400" />
-              {wind.speed}km/h
-              <small>Wind Speed</small>
-            </span>
+          <div className="flex items-center ">
+            <div className="p-3 bg-black rounded-lg opacity-55 shadow-lg shadow-white">
+              <span className="text-sm flex flex-col items-center text-white ">
+                <BiWater className="text-cyan-400" />
+                {main.humidity}%<small>Humidity </small>
+              </span>
+            </div>
+            <div className="bg-black rounded-lg opacity-55 mx-auto p-4 shadow-lg shadow-white flex flex-col items-center">
+              <h5 className="mb-1 text-xl font-medium text-blue-200  ">
+                {Math.round(main.temp)}°C
+              </h5>
+              <span className="text-lg text-white font-bold drop-shadow-lg">
+                {name}
+              </span>
+            </div>
+            <div className="p-3 bg-black rounded-lg opacity-55 shadow-lg shadow-white">
+              <span className="text-sm flex flex-col items-center text-white ">
+                <FaWind className="text-cyan-400" />
+                {wind.speed}km/h
+                <small>Wind Speed</small>
+              </span>
+            </div>
           </div>
         </div>
       </>

@@ -19,21 +19,21 @@ export default function WeatherIcons({
   description: string;
 }) {
   return (
-    <div className="flex flex-col items-center pb-10">
+    <div className="flex flex-col items-center p-10 bg-black rounded-lg opacity-60 shadow-lg shadow-white mb-8">
       {status === "Clouds" ? (
-        <TiWeatherCloudy className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <TiWeatherCloudy className="text-4xl font-bold text-gray-300 drop-shadow-md" />
       ) : status === "Rain" ? (
-        <TiWeatherDownpour className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <TiWeatherDownpour className="text-4xl font-bold text-cyan-200 drop-shadow-md" />
       ) : status === "Fog" ? (
-        <RiFoggyLine className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <RiFoggyLine className="text-4xl font-bold text-gray-200 drop-shadow-md" />
       ) : status === "Smoke" ? (
-        <WiSmoke className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <WiSmoke className="text-4xl font-bold text-cyan-200 drop-shadow-md" />
       ) : status === "Haze" ? (
-        <RiHazeLine className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <RiHazeLine className="text-4xl font-bold text-cyan-200 drop-shadow-md" />
       ) : status === "Snow" ? (
         <BsCloudSnow className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
       ) : status === "Thunderstorm" ? (
-        <IoThunderstorm className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
+        <IoThunderstorm className="text-4xl font-bold text-purple-300 drop-shadow-md" />
       ) : status === "Clear" ? (
         <TiWeatherSunny className="text-4xl font-bold text-cyan-500 drop-shadow-md" />
       ) : status === "Dust" ? (
@@ -54,10 +54,10 @@ export default function WeatherIcons({
         <TiWeatherSunny />
       )}
 
-      <h1 className="text-md font-semibold">
+      <h1 className="text-md text-white pt-3 font-semibold">
         {status.charAt(0).toUpperCase() + status.slice(1)}
       </h1>
-      <p className="text-sm font-thin">
+      <p className="text-sm text-white font-thin hover:text-blue-300">
         {description.charAt(0).toUpperCase() + description.slice(1)}
       </p>
     </div>
