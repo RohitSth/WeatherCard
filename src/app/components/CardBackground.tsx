@@ -25,59 +25,59 @@ export default async function CardBackground({ city }: { city: string }) {
     switch (weatherStatus) {
       case "Clouds":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/i8xvugWeYuwfP0oVthneVAmxlaPXUlx632rmiaW6TeU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zdW4td2l0aC1z/dW4tcmF5cy1ibHVl/LXNreS13aXRoLWNs/b3Vkc18xMDQzMzct/NTQ5Mi5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw";
+          "https://imgs.search.brave.com/LuAAXo9tVzbusaFi5FRiH1HJaxtKHmRwDFIhnOT8Oyk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU3/MzM1NDgzL3Bob3Rv/L2ZsdWZmeS13aGl0/ZS1jbG91ZHMtZnJv/bS1hYm92ZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ME9o/LTJYc2ZrWWdJaVBu/eUppLVdtNlFOYjJJ/UXJrNGdqZ050bHRi/QTNWND0";
         break;
       case "Rain":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/maBC4aFgqm6Xtny3J8ryfNg2ykM-q3EsZrPAMsaQuBw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ1/Mzg4MzI5MS9waG90/by9zdG9ybXktY2xv/dWR5LXNraWVzLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1C/NEp0cXI5TmZ3X010/bktobzRBbnJXZ3Ix/MmNSSkNfUTR5U3Jw/bVRNaW5vPQ";
+          "https://imgs.search.brave.com/ILbSMDe-Vg7SuIaFtEpbAZpdaYJMFoZclE41dzoXG8c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzAxLzEwLzQw/LzM2MF9GXzMwMTEw/NDAzNl9vdnRCSkkz/UzM0dzRIQ25CbEh0/OVhxZzk5TXFGZTJG/SS5qcGc";
         break;
       case "Fog":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/ou410BXgTJ36FQ74hXKyy23c_QTcAZjQIePKSIjB0_Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92aHgu/aW1naXgubmV0L2Ny/aXRlcmlvbmNoYW5u/ZWxjaGFydGVyc3Uv/YXNzZXRzLzRlZDRl/MjY2LWIzNjYtNDNm/YS1iMjEwLTQwZTVl/ZWJmZjdmYS03ODRm/M2MwOS5qcGc_YXV0/bz1mb3JtYXQsY29t/cHJlc3MmZml0PWNy/b3AmaD03MjAmcT03/NSZ3PTEyODA";
+          "https://imgs.search.brave.com/NGv8uRGYEy2H6u4lq-WY2CD7bqzhk7twA4pOFyJDIJw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/Zm9nLW9uLW1vdW50/YWluLW5lYXItc2Fu/LWZyYW5jaXNjby12/MC1yZHIwbGJidHNv/Z2MxLmpwZWc_d2lk/dGg9NjQwJmNyb3A9/c21hcnQmYXV0bz13/ZWJwJnM9NTg0Zjhj/YzkzNjViNzZjZTMz/MTY4ZGRlNjM1ZWIy/MDE0YzMxNWJjNQ";
         break;
       case "Smoke":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/FAjrYz38Rjjyl9hymr-Y0BKnWLSFHtz-RlECxiUgkq0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIx/MDExNjUyL3Bob3Rv/L25pZ2h0LXNjZW5l/LW1pbGt5LXdheS1i/YWNrZ3JvdW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1H/MllvSEJCc3dWdEhn/eWNxbHRyYmdzWjll/bHR4dDA2WW04NUpw/NW5mZDV3PQ";
+          "https://imgs.search.brave.com/dyDwPL22693qkq732omHcfdWZyTCH2AlAywrr_e4HsU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzAwMTc0Ny9waG90/by9zbW9rZS1hZ2Fp/bnN0LWJsYWNrLWJh/Y2tncm91bmQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTE0/T3JMR1pBYVBkalE4/R3pnWWc2emYwaTBG/Sm9haVhTbjBzMVRt/aFlRY3c9";
         break;
       case "Haze":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/Og74KoBKSakchgPd-70iAMoc2r3kpzjwokEm5SLn5oE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93cGNk/bi51cy1lYXN0LTEu/dmlwLnRuLWNsb3Vk/Lm5ldC93d3cua2xr/bnR2LmNvbS9jb250/ZW50L3VwbG9hZHMv/MjAyMC8wNC9jbG91/ZDEuanBn";
+          "https://imgs.search.brave.com/dyDwPL22693qkq732omHcfdWZyTCH2AlAywrr_e4HsU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzAwMTc0Ny9waG90/by9zbW9rZS1hZ2Fp/bnN0LWJsYWNrLWJh/Y2tncm91bmQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTE0/T3JMR1pBYVBkalE4/R3pnWWc2emYwaTBG/Sm9haVhTbjBzMVRt/aFlRY3c9";
         break;
       case "Thunderstorm":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/QYDYsvRJ_0KMXlnzeJA9E3meIrh7I2nCR1VK_47mtYY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIy/Nzk1MjMyL3Bob3Rv/L3JhaW4td2F0ZXIt/ZHJvcC1mYWxsaW5n/LXRvLXRoZS1mbG9v/ci1pbi1yYWlueS1z/ZWFzb24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVIyZ3B6/d2JGOWJxWklfdkRN/UXF6M0plMjJaSDk0/RDF1UFlsZ3R5N0hm/NnM9";
+          "https://imgs.search.brave.com/2uVUZoK7XgtPcgX_DyDpSvlfUPCmXCwMr9CBzqjp9PQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzI2LzE5LzEy/LzM2MF9GXzMyNjE5/MTIzNF9RMTJ1dFNa/MHZteFY2dEtRWG9n/a3RVN2UzZG1aMkpM/SS5qcGc";
         break;
       case "Snow":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/AVRUlk9RDuY1OOkKx1hyBb3Qk-LM_6DH0trFOov1yZ8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDI2MDEwOTgtOGZj/MTE0ZTE0OGUyP3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tkh4OGMyNXZk/eVV5TUhOMGIzSnRm/R1Z1ZkRCOGZEQjhm/SHd3";
+          "https://imgs.search.brave.com/pSOSWmZ7PQBxES0_nvguFz3YHuMyNOiHz2Iq1DgsiOM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzE0LzZm/LzdjLzE0NmY3YzU3/ODM2ZTcwOWM4ZjAy/NDg2NzQ4ZTg4Y2Iy/LmpwZw";
         break;
       case "Clear":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/Nvas6Yp4wkpjdd-jz8mer8OMFmYwlgqOWDNrH_8Fp9I/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY2/NDQ2NjgyL3Bob3Rv/L3N0b3JteS1zZWEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWNmUXppUWl5VU9W/aDZtcjNmS1lBMm5z/bGZ1TlFfSlJMUjBw/Skp0dnZQRUE9";
+          "https://imgs.search.brave.com/WDwIbhWLSNQKOHumFnyEcXssEo3lWlMaMzvro7IHvts/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jbGVhci1ibHVl/LXNreS1ncmFkaWVu/dC1mcm9tLWRhcmst/bGlnaHQtdmVydGlj/YWxfMTU2NzQ1LTEy/MTkuanBnP3NpemU9/NjI2JmV4dD1qcGc";
         break;
       case "Dust":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/i8xvugWeYuwfP0oVthneVAmxlaPXUlx632rmiaW6TeU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zdW4td2l0aC1z/dW4tcmF5cy1ibHVl/LXNreS13aXRoLWNs/b3Vkc18xMDQzMzct/NTQ5Mi5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw";
+          "https://imgs.search.brave.com/Pp0FhaBU3iK4vNvF8LOZ3DRfxUmZkGi_8pJ4yOoug3c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/ZWF1dGlmdWwtc2t5/LXdpdGgtY2xvdWRz/XzU4NzAyLTE0NTUu/anBnP3NpemU9NjI2/JmV4dD1qcGc";
         break;
       case "Ash":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/wu0oe0e1HhVscpZ4PTlJRKS23lDM0SflO6HwdYfW5EM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzk5Lzk2LzE4/LzM2MF9GXzQ5OTk2/MTg0OV9SVFBqWEhF/Q1VIQmk0WDlacnBW/VHhiMzBFc3gwYnZJ/cS5qcGc";
+          "https://imgs.search.brave.com/ScMXM_US0MSw6kAWdBJVFOiuA-JBG6oDrwppGBEjmDs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTg1NjM3L3Bob3Rv/L2Nsb3VkLW9mLXZv/bGNhbmljLWFzaC1m/cm9tLXNha3VyYWpp/bWEta2Fnb3NoaW1h/LWphcGFuLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1TeG9S/QURISVZ6b1pGYkJL/OVRTaFlWR05vQ0U1/ZlpabjhPQXhMdlZq/ZUUwPQ";
         break;
       case "Sand":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/XgIOIF1dpAZX_exANTiPDKh305woG_3_i7SIVmBQNbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjQyNTI1MDAzNDgt/MWJiMDdiODNmM2Jl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFpt/OW5aM2tsTWpCM1pX/RjBhR1Z5ZkdWdWZE/QjhmREI4Zkh3dw.jpeg";
+          "https://imgs.search.brave.com/4GqnlrXqgD0zLsh10UyuiR7aROJ6BO9AiZh_qJCfuLI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAy/ODgzNzk3Ni9waG90/by9jbG91ZHMtaW4t/c2FuZHN0b3JtLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1t/LXhlWU4yZlU1Q3Bq/cXJPTUQtMmFqdWFU/QzdoTktjbE11MjVt/S3ZPSWNzPQ";
         break;
       case "Squall":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/XgIOIF1dpAZX_exANTiPDKh305woG_3_i7SIVmBQNbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjQyNTI1MDAzNDgt/MWJiMDdiODNmM2Jl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFpt/OW5aM2tsTWpCM1pX/RjBhR1Z5ZkdWdWZE/QjhmREI4Zkh3dw.jpeg";
+          "https://imgs.search.brave.com/giC_RGjzqVshq05-VHQz6HMnug51uM20Oa4J91n_sGQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQ2L1Ro/dW5kZXJfYW5kX3dp/bmRfZHVyaW5nX2Ff/dGh1bmRlcnN0b3Jt/LndlYm0vNjQwcHgt/LVRodW5kZXJfYW5k/X3dpbmRfZHVyaW5n/X2FfdGh1bmRlcnN0/b3JtLndlYm0uanBn";
         break;
       case "Tornado":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/XgIOIF1dpAZX_exANTiPDKh305woG_3_i7SIVmBQNbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjQyNTI1MDAzNDgt/MWJiMDdiODNmM2Jl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFpt/OW5aM2tsTWpCM1pX/RjBhR1Z5ZkdWdWZE/QjhmREI4Zkh3dw.jpeg";
+          "https://imgs.search.brave.com/7_qrO-a3Y-nqOBGAd4WTbbS9y_vaTRvEcwDfPhQpIIY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzU3LzMyLzIz/LzM2MF9GXzE1NzMy/MjMzOF9iWGxpTXNw/SEM2cUdaSTNqWjF4/bHZteHJqSWdFQ0Rh/ZS5qcGc";
         break;
       case "Drizzle":
         backgroundImageUrl =
-          "https://imgs.search.brave.com/XgIOIF1dpAZX_exANTiPDKh305woG_3_i7SIVmBQNbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjQyNTI1MDAzNDgt/MWJiMDdiODNmM2Jl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFpt/OW5aM2tsTWpCM1pX/RjBhR1Z5ZkdWdWZE/QjhmREI4Zkh3dw.jpeg";
+          "https://imgs.search.brave.com/Wsrsbrdb_3P3TiGJbN8mFbznQuQTc74iyPcFHuQMUQs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI1/MTM1Mzg3NS9waG90/by9yYWluLWRyb3Bz/LWJhY2tncm91bmQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXQtWjFZM2hVODRF/ZHQwN1F3TFZtSkRW/N2Z0RDJ3R3BMcHFh/LWd6RkVLYUk9";
         break;
     }
 
