@@ -1,9 +1,9 @@
-import CardBackground from "./components/CardBackground";
+import Hero from "./pages/hero/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <CardBackground city="Paris" />
+    <main>
+      <Hero city="kathmandu" />
     </main>
   );
 }
