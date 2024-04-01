@@ -13,10 +13,9 @@ export default async function Hero({ city }: { city: string }) {
   }
 
   try {
-    const { name, weather, main, wind } = await checkWeather(city);
+    const { weather } = await checkWeather(city);
 
     const weatherStatus = weather[0].main;
-    const weatherDescription = weather[0].description;
 
     let backgroundImageUrl;
 
