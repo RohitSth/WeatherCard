@@ -3,7 +3,7 @@ import Hero from "./pages/hero/page";
 export default function Home() {
   return (
     <main>
-      <Hero city="Greece" />
+      <Hero city="Kathmandu" />
     </main>
   );
 }

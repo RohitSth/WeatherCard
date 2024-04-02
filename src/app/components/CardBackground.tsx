@@ -1,5 +1,5 @@
 export default async function CardBackground({ city }: { city: string }) {
-  const apiKey = "27bfe5feb37c46d1b74899ab94d95423";
+  const apiKey = process.env.API_KEY;
   const apiUrl =
     "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 

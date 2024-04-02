@@ -1,7 +1,7 @@
-import CardBackground from "@/app/components/CardBackground";
+import Card from "@/app/components/Card";
 
 export default async function Hero({ city }: { city: string }) {
-  const apiKey = "27bfe5feb37c46d1b74899ab94d95423";
+  const apiKey = process.env.API_KEY;
   const apiUrl =
     "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -13,9 +13,14 @@ export default async function Hero({ city }: { city: string }) {
   }
 
   try {
-    const { weather } = await checkWeather(city);
+    const { name, weather, main, wind, visibility, dt } = await checkWeather(
+      city
+    );
 
+    const icon = weather[0].icon;
     const weatherStatus = weather[0].main;
+
+    const weatherDescription = weather[0].description;
 
     let backgroundImageUrl;
 
@@ -88,7 +93,16 @@ export default async function Hero({ city }: { city: string }) {
         >
           Hello
           <div className="absolute top-5 right-5">
-            <CardBackground city={city} />
+            <Card
+              cityName={name}
+              humidity={main.humidity}
+              temperature={main.temp}
+              windSpeed={wind.speed}
+              visibility={visibility}
+              icon={icon}
+              weatherStatus={weatherStatus}
+              weatherDescription={weatherDescription}
+            />
           </div>
         </div>
       </>
