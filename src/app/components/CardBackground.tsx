@@ -10,9 +10,12 @@ export default async function CardBackground({ city }: { city: string }) {
     return data;
   }
 
-  const { name, weather, main, wind, visibility } = await checkWeather(city);
+  const { name, weather, main, wind, visibility, dt } = await checkWeather(
+    city
+  );
 
   const icon = weather[0].icon;
+  const currentTime = new Date(dt * 1000);
 
   const weatherStatus = weather[0].main;
   const weatherDescription = weather[0].description;
@@ -23,6 +26,7 @@ export default async function CardBackground({ city }: { city: string }) {
         <div className="flex items-center">
           <p className="font-extrabold text-transparent text-lg bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 drop-shadow-sm">
             {name}
+            {/* {currentTime.toLocaleString()} */}
           </p>
         </div>
 
@@ -31,9 +35,9 @@ export default async function CardBackground({ city }: { city: string }) {
             <div className="mt-7">
               <h5 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 drop-shadow-sm ">
                 {Math.round(main.temp)}°C
-                <p className="text-sm pt-4">
+                {/* <p className="text-sm pt-4">
                   Feels like {Math.round(main.feels_like)}°C
-                </p>
+                </p> */}
               </h5>
             </div>
 
